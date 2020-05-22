@@ -29,7 +29,12 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event){
+  if (event.keyCode === 13){
+    document.getElementById("addBtn").click();
+  }
+});
 
 // Create a new must item when clicking on the "Add" button
 function newMust() {
@@ -123,6 +128,7 @@ function newCould() {
     }
   }
 }
+
 
 
 /* When the user clicks on the button,
