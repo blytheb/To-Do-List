@@ -10,32 +10,31 @@
       <h1>My To Do List</h1>
       <input type="text" id="myInput" placeholder="Something you need to do">
         <div class="dropdown">
-        <button onclick="myFunction()" class="addBtn">Add</button>
+        <span onclick="myFunction()" class="addBtn">Add</span>
           <div id="myDropdown" class="dropdown-content">
-            <a href="#"> Must Do Task </a>
-            <a href="#"> Should Do Soon Task </a>
-            <a href="#"> Later Task </a>
+            <a onclick="newMust()"> Must Do Task </a>
+            <a onclick="newShould()"> Should Do Soon Task </a>
+            <a onclick="newCould()"> Could Do Later Task </a>
           </div>
         </div>
     </div>
-    <div id="must" class="ListTask">
-      <h3>Must Do List</h3>
-      <ul id="Must">
-        <p id="emptyMust"> You have no task to do </p>
+    <div class="Must">
+      <h3>Must Do Tasks</h3>
+      <ul id="mustUL">
       </ul>
     </div>
-    <div id="should" class="ListTask">
-      <h3>Should Do List</h3>
-      <ul id="should">
-        <p id="emptyShould"> You have no task to do </p>
+    <div class="Should">
+      <h3>Should Do Soon Tasks</h3>
+      <ul id="shouldUL">
       </ul>
     </div>
-    <div id="could" class="ListTask">
-      <h3>Could Do List</h3>
-      <ul id="Must">
-        <p id="emptyMuust"> You have no task to do </p>
+    <div class="Could">
+      <h3>Could Do Later Tasks</h3>
+      <ul id="couldUL">
       </ul>
     </div>
+
+
 
     <script src="main.js"></script>
   </body>
