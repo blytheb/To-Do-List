@@ -4,6 +4,13 @@
   color: #333;
 }
 
+body {
+  background-color: #944dff;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
@@ -57,12 +64,6 @@ ul li.checked::before {
   width: 7px;
 }
 
-ul p {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 40px;
-}
-
 /* Style the close button */
 .close {
   position: absolute;
@@ -77,11 +78,13 @@ ul p {
 }
 
 /* Style the header */
-body {
-  background-color: #b3b3ff;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
+.header{
+  border: 3px;
+  background-color: grey;
+  color: black;
+  border-style: solid;
+  padding: 20px;
+
 }
 
 /* Clear floats after the header */
